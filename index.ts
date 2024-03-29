@@ -4,13 +4,13 @@ import inquirer from "inquirer";
 
 const answers = await inquirer.prompt([
     {
-        message: "Enter first number: ",
+        message: "Enter your first number: ",
         type: "number",
         name: "num1",
         
     },
     {
-        message: "Enter second number: ",
+        message: "Enter your second number: ",
         type: "number",
         name: "num2",
     },
@@ -32,3 +32,4 @@ if (answers.operator === "add") {
 else {
     console.log("invalid operator");
 }
+console.log("THE END");
